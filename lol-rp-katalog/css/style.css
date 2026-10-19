@@ -1,0 +1,120 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b1220;
+    color: white;
+}
+
+header {
+    background: #142b4a;
+    padding: 22px;
+    text-align: center;
+    border-bottom: 2px solid #2684ff;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 0;
+    color: #cbd5e1;
+}
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.kontrole {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+select {
+    background: #17263d;
+    color: white;
+    border: 1px solid #2d4565;
+    border-radius: 5px;
+    padding: 9px;
+}
+
+.katalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.kartica {
+    background: #17263d;
+    border: 1px solid #2d4565;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.kartica:hover {
+    transform: translateY(-4px);
+}
+
+.kartica img {
+    display: block;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.kartica h2 {
+    font-size: 19px;
+    margin: 15px;
+}
+
+.cijena {
+    color: #65a9ff;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.kartica a {
+    display: inline-block;
+    margin: 0 15px 15px;
+    padding: 9px 15px;
+    background: #2678e8;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.kartica a:hover {
+    background: #4090ff;
+}
+
+.kartica.istaknuto {
+    border-color: #65a9ff;
+}
+
+#prazno-stanje {
+    text-align: center;
+    color: #cbd5e1;
+    margin-top: 30px;
+}
+
+@media (max-width: 500px) {
+    main {
+        padding: 0 12px;
+    }
+
+    .katalog {
+        grid-template-columns: 1fr;
+    }
+}

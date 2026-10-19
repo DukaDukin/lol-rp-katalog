@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoL RP katalog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/podaci.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>LoL RP katalog</h1>
+        <p>Ukupno paketa: <span id="broj-zapisa">8</span></p>
+    </header>
+
+    <main>
+        <div class="kontrole">
+            <label for="filter">Kategorija:</label>
+            <select id="filter">
+                <option value="Sve">Sve</option>
+                <option value="Standardni">Standardni</option>
+                <option value="Premium">Premium</option>
+            </select>
+
+            <label for="sortiranje">Sortiraj:</label>
+            <select id="sortiranje">
+                <option value="naziv">Po nazivu</option>
+                <option value="cijena-rastuce">Cijena: od najniže</option>
+                <option value="cijena-silazno">Cijena: od najviše</option>
+            </select>
+        </div>
+
+        <section id="katalog" class="katalog"></section>
+        <p id="prazno-stanje" hidden>Nema paketa za prikaz.</p>
+    </main>
+</body>
+</html>
