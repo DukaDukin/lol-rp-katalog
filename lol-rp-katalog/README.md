@@ -1,8 +1,5 @@
 # League of Legends - RP katalog
 
-## Opis projekta
-
-Web stranica prikazuje katalog oglednih paketa Riot Pointsa (RP) za igru League of Legends. Kartice se izrađuju JavaScriptom iz polja objekata u datoteci `js/podaci.js`.
 
 ## Svojstva svakog zapisa
 
@@ -29,6 +26,5 @@ Web stranica prikazuje katalog oglednih paketa Riot Pointsa (RP) za igru League 
 3. Desnom tipkom kliknuti `index.html`.
 4. Odabrati **Open with Live Server**.
 
-Budući da se koriste JavaScript moduli (`import` i `export`), projekt pokreni preko lokalnog poslužitelja, a ne izravno preko `file://` adrese.
 
-**Napomena:** Cijene i nazivi paketa su ogledni i nisu službeni cjenik Riota.
+**Napomena:** Cijene i nazivi paketa nisu na službeni na stranici Riota.
